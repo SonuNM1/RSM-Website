@@ -1,0 +1,1436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Agency in USA | SEO, & Web Design - RSM</title>
+    <meta
+      name="description"
+      content="RSM Digital Marketing Agency offers cost-effective, results-driven digital marketing solutions, including SEO, SMO, and a full range of online marketing services."
+    />
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="Section2.css" />
+    <link rel="stylesheet" href="Styles2.css" />
+    <link rel="stylesheet" href="Footer.css" />
+
+    <!-- Google tag (gtag.js) -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZPRNQ8Q138"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZPRNQ8Q138");
+    </script>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="siteLoader">
+      <div class="loader-logo">
+        <img src="./image.png" alt="RSM logo" />
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+    <!-- Custom cursor -->
+    <div id="cursor"></div>
+    <div id="cursorDot"></div>
+    <canvas
+      id="glowTrail"
+      style="position: fixed; inset: 0; z-index: 9997; pointer-events: none"
+    ></canvas>
+
+    <nav class="nav">
+      <div class="nav-left">
+        <img src="./image.png" alt="RSM logo" />
+      </div>
+      <ul class="nav-mid">
+        <!-- <li><a href="#evolution">Evolution</a></li> -->
+        <li><a href="./Cosmos.html">The SEO Cosmos</a></li>
+        <li><a href="./HowSEOWorks.html">How SEO Works</a></li>
+        <li><a href="#future">Future of SEO</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a
+        href="https://calendly.com/thomas-relevant-search-media/30min"
+        target="_blank"
+        class="nav-cta"
+        >Book Strategy Call</a>
+
+      <!-- nav for mobile screens via hamburger icon -->
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-mobile-menu" id="navMobileMenu">
+        <a href="./Cosmos.html" onclick="closeMenu()">The Cosmos</a>
+        <a href="#how" onclick="closeMenu()">How It Works</a>
+        <a href="#future" onclick="closeMenu()">Future</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a
+          href="https://calendly.com/thomas-relevant-search-media/30min"
+          target="_blank"
+          class="nav-mobile-cta"
+          onclick="closeMenu()"
+          >Book Strategy Call</a
+        >
+      </div>
+    </nav>
+
+    <div id="wrap">
+      <div id="heroBg" aria-hidden="true">
+        <div class="hb-orb hb-orb1"></div>
+        <div class="hb-orb hb-orb2"></div>
+        <div class="hb-orb hb-orb3"></div>
+        <div class="hb-orb hb-orb4"></div>
+        <div class="hb-grid"></div>
+        <div class="hb-scan"></div>
+      </div>
+
+      <div id="vOverlay"></div>
+      <canvas id="cBg"></canvas><canvas id="cFx"></canvas>
+
+      <!-- 20 ICONS with tooltips -->
+      <div class="nd" id="n0" data-tip="Search Engine Rankings">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #4285f4"></div>
+          <svg viewBox="0 0 48 48">
+            <path
+              d="M44 24.5c0-1.57-.14-3.09-.4-4.55H24v8.51h11.26c-.49 2.63-1.97 4.85-4.2 6.34v5.27h6.8c3.97-3.66 6.14-9.04 6.14-15.57z"
+              fill="#4285F4"
+            />
+            <path
+              d="M24 46c5.7 0 10.49-1.89 13.99-5.13l-6.83-5.27c-1.89 1.27-4.31 2.01-7.16 2.01-5.5 0-10.16-3.71-11.83-8.7H5.14v5.44C8.7 41.35 15.84 46 24 46z"
+              fill="#34A853"
+            />
+            <path
+              d="M12.17 28.91c-.88-2.55-.88-5.27 0-7.82V15.65H5.14C2.38 19.88 1 24.88 1 26s1.38 6.12 4.14 10.35l7.03-5.44z"
+              fill="#FBBC05"
+            />
+            <path
+              d="M24 10.28c3.1 0 5.88 1.07 8.07 3.16l6.04-6.04C34.46 4.04 29.67 2 24 2 15.84 2 8.7 6.65 5.14 13.65l7.03 5.44c1.67-4.99 6.33-8.81 11.83-8.81z"
+              fill="#EA4335"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Google</span>
+        <div class="nd-tip">Search Engine Rankings</div>
+      </div>
+      <div class="nd" id="n1" data-tip="Search Engine Optimization">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #4f8fff"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle
+              cx="19"
+              cy="19"
+              r="13"
+              stroke="#4f8fff"
+              stroke-width="3.5"
+            />
+            <line
+              x1="28.5"
+              y1="28.5"
+              x2="43"
+              y2="43"
+              stroke="#4f8fff"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">SEO</span>
+        <div class="nd-tip">Search Engine Optimization</div>
+      </div>
+      <div class="nd" id="n2" data-tip="Answer Engine Optimization">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #06d6a0"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect
+              x="5"
+              y="7"
+              width="38"
+              height="34"
+              rx="5"
+              stroke="#06d6a0"
+              stroke-width="2.5"
+            />
+            <circle cx="37" cy="13" r="6" fill="#06d6a0" />
+          </svg>
+        </div>
+        <span class="nd-name">AEO</span>
+        <div class="nd-tip">Answer Engine Optimization</div>
+      </div>
+      <div class="nd" id="n3" data-tip="AI Overview Optimization">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #a855f7"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M24 3L5 13.5v21L24 45l19-10.5v-21L24 3z"
+              stroke="#a855f7"
+              stroke-width="2.5"
+            />
+            <circle cx="24" cy="24" r="6" fill="#a855f7" opacity=".85" />
+          </svg>
+        </div>
+        <span class="nd-name">AIO</span>
+        <div class="nd-tip">AI Overview Optimization</div>
+      </div>
+      <div class="nd" id="n4" data-tip="Experience Expertise Authority Trust">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #ec4899"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M24 3l6 12.2L43 17.2l-9.5 9.3L35.7 40 24 33.8 12.3 40l2.2-13.5L5 17.2l13-2L24 3z"
+              fill="#ec4899"
+              opacity=".85"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">E-E-A-T</span>
+        <div class="nd-tip">Experience Expertise Authority Trust</div>
+      </div>
+      <div class="nd" id="n5" data-tip="AI Search Citations">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #10a37f"></div>
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20" fill="#10a37f" />
+            <path
+              d="M16 20c0-4.4 3.6-8 8-8s8 3.6 8 8"
+              stroke="#fff"
+              stroke-width="2.5"
+              fill="none"
+              stroke-linecap="round"
+              opacity=".7"
+            />
+            <rect
+              x="16"
+              y="23"
+              width="16"
+              height="10"
+              rx="2"
+              fill="#fff"
+              opacity=".7"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">ChatGPT</span>
+        <div class="nd-tip">AI Search Citations</div>
+      </div>
+      <div class="nd" id="n6" data-tip="Local Map Pack">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #ea4335"></div>
+          <svg viewBox="0 0 48 48">
+            <path
+              d="M24 2C14.6 2 7 9.4 7 18.5 7 31 24 46 24 46s17-15 17-27.5C41 9.4 33.4 2 24 2z"
+              fill="#EA4335"
+            />
+            <circle cx="24" cy="18" r="4.5" fill="#fff" />
+          </svg>
+        </div>
+        <span class="nd-name">Maps</span>
+        <div class="nd-tip">Local Map Pack</div>
+      </div>
+      <div class="nd" id="n7" data-tip="Structured Data Markup">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #14b8a6"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M16 7L3 24l13 17"
+              stroke="#14b8a6"
+              stroke-width="3.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M32 7l13 17-13 17"
+              stroke="#14b8a6"
+              stroke-width="3.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Schema</span>
+        <div class="nd-tip">Structured Data Markup</div>
+      </div>
+      <div class="nd" id="n8" data-tip="AI Search Discovery">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #1a7f64"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle
+              cx="24"
+              cy="24"
+              r="19"
+              stroke="#1a7f64"
+              stroke-width="2.5"
+            />
+            <path
+              d="M12 24h10l4-8 4 16 4-8h10"
+              stroke="#1a7f64"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Perplexity</span>
+        <div class="nd-tip">AI Search Discovery</div>
+      </div>
+      <div class="nd" id="n9" data-tip="Microsoft AI Search">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #00a4ef"></div>
+          <svg viewBox="0 0 48 48">
+            <path
+              d="M9 5v31l11 7 19-11.5v-8L22 17l-5 2.5V5H9z"
+              fill="#00a4ef"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Copilot</span>
+        <div class="nd-tip">Microsoft AI Search</div>
+      </div>
+      <div class="nd" id="n10" data-tip="Community Trust Signals">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #ff4500"></div>
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="19" fill="#FF4500" />
+            <ellipse cx="24" cy="28.5" rx="11" ry="7.5" fill="#fff" />
+            <circle cx="19.5" cy="26.5" r="2.5" fill="#FF4500" />
+            <circle cx="28.5" cy="26.5" r="2.5" fill="#FF4500" />
+          </svg>
+        </div>
+        <span class="nd-name">Reddit</span>
+        <div class="nd-tip">Community Trust Signals</div>
+      </div>
+      <div class="nd" id="n11" data-tip="Google AI Platform">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #4285f4"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M24 2C17 14 9 18 2 26c7 6 15 12 22 20 7-8 15-14 22-20C39 18 31 14 24 2z"
+              fill="url(#gem)"
+            />
+            <defs>
+              <linearGradient id="gem" x1="2" y1="2" x2="46" y2="46">
+                <stop stop-color="#4285F4" />
+                <stop offset=".33" stop-color="#34A853" />
+                <stop offset=".66" stop-color="#FBBC05" />
+                <stop offset="1" stop-color="#EA4335" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="nd-name">Gemini</span>
+        <div class="nd-tip">Google AI Platform</div>
+      </div>
+      <div class="nd" id="n12" data-tip="Location-Based Rankings">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #f59e0b"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle
+              cx="24"
+              cy="19"
+              r="15"
+              stroke="#f59e0b"
+              stroke-width="2.5"
+            />
+            <path
+              d="M17 42l7-7 7 7"
+              stroke="#f59e0b"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Local SEO</span>
+        <div class="nd-tip">Location-Based Rankings</div>
+      </div>
+      <div class="nd" id="n13" data-tip="Google Business Profile">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #34a853"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect
+              x="7"
+              y="9"
+              width="34"
+              height="30"
+              rx="4"
+              stroke="#34A853"
+              stroke-width="2.5"
+            />
+            <circle cx="24" cy="21" r="7" stroke="#34A853" stroke-width="2.5" />
+          </svg>
+        </div>
+        <span class="nd-name">GBP</span>
+        <div class="nd-tip">Google Business Profile</div>
+      </div>
+      <div class="nd" id="n14" data-tip="Directory Listings">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #8b5cf6"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M9 11h30v32H9z" stroke="#8b5cf6" stroke-width="2.5" />
+            <path
+              d="M15 20h18M15 26.5h14"
+              stroke="#8b5cf6"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              opacity=".55"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Citations</span>
+        <div class="nd-tip">Directory Listings</div>
+      </div>
+      <div class="nd" id="n15" data-tip="Site Speed & Crawling">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #f97316"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="9" stroke="#f97316" stroke-width="3" />
+            <path
+              d="M24 3v7M24 38v7M3 24h7M38 24h7"
+              stroke="#f97316"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Tech SEO</span>
+        <div class="nd-tip">Site Speed & Crawling</div>
+      </div>
+      <div class="nd" id="n16" data-tip="Backlink Authority">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #3b82f6"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M19 29l-5 5a6.4 6.4 0 010-9l9-9a6.4 6.4 0 019 0 6.4 6.4 0 010 9"
+              stroke="#3b82f6"
+              stroke-width="3.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M29 19l5-5a6.4 6.4 0 010 9l-9 9a6.4 6.4 0 01-9 0 6.4 6.4 0 010-9"
+              stroke="#3b82f6"
+              stroke-width="3.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Links</span>
+        <div class="nd-tip">Backlink Authority</div>
+      </div>
+      <div class="nd" id="n17" data-tip="Content Strategy">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #e879f9"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M7 5h26l8 8v30a2 2 0 01-2 2H9a2 2 0 01-2-2V7a2 2 0 012-2z"
+              stroke="#e879f9"
+              stroke-width="2.5"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Content</span>
+        <div class="nd-tip">Content Strategy</div>
+      </div>
+      <div class="nd" id="n18" data-tip="Voice Search Optimization">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #06b6d4"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect
+              x="17"
+              y="5"
+              width="14"
+              height="24"
+              rx="7"
+              stroke="#06b6d4"
+              stroke-width="2.5"
+            />
+            <path
+              d="M11 24c0 7.2 5.8 13 13 13s13-5.8 13-13"
+              stroke="#06b6d4"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Voice</span>
+        <div class="nd-tip">Voice Search Optimization</div>
+      </div>
+      <div class="nd" id="n19" data-tip="Featured Snippet Rankings">
+        <div class="nd-box">
+          <div class="nd-glow" style="background: #fbbf24"></div>
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect
+              x="5"
+              y="7"
+              width="38"
+              height="14"
+              rx="4"
+              stroke="#fbbf24"
+              stroke-width="2.5"
+            />
+          </svg>
+        </div>
+        <span class="nd-name">Snippets</span>
+        <div class="nd-tip">Featured Snippet Rankings</div>
+      </div>
+
+      <!-- SUN DISC -->
+      <div class="sun" id="sun">
+        <div class="sun-aura"></div>
+        <div class="sun-aura2"></div>
+        <div class="sr sr1"></div>
+        <div class="sr sr2"></div>
+        <div class="sr sr3"></div>
+        <div class="sr sr4"></div>
+        <div class="sun-bg"></div>
+        <div class="sun-core"></div>
+        <div class="sun-orb">
+          <svg viewBox="0 0 460 460">
+            <defs>
+              <path
+                id="op"
+                d="M230,230 m-210,0 a210,210 0 1,1 420,0 a210,210 0 1,1 -420,0"
+              />
+            </defs>
+            <text>
+              <textPath href="#op">
+                SEARCH EVERYWHERE OPTIMIZATION · RELEVANT SEARCH MEDIA · SINCE
+                2006 ·
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="sun-ct">
+          <img src="./image.png" alt="Relevant Search Media Logo" />
+          <h1>The <em>Origin</em> of Search Visibility.</h1>
+          <!-- <p>We engineer visibility across the entire search cosmos.</p> -->
+        </div>
+      </div>
+
+      <!-- BUTTONS — direct child of #wrap so mobile absolute bottom positioning works -->
+      <div class="btns">
+        <a href="#cosmos" class="sb1">Explore the Cosmos</a
+        ><a
+          href="https://calendly.com/thomas-relevant-search-media/30min"
+          target="_blank"
+          class="sb2"
+          >Strategy Call</a
+        >
+      </div>
+    </div>
+    <!-- end #wrap -->
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION: EVOLUTION CHAKRA                   -->
+    <!-- Styles → Section2.css  |  JS → Section2.js  -->
+    <!-- ═══════════════════════════════════════════ -->
+
+    <section class="chakra-sec" id="evolution">
+      <div class="chakra-sec-bg" aria-hidden="true">
+        <div class="csb-orb csb-orb1"></div>
+        <div class="csb-orb csb-orb2"></div>
+        <div class="csb-orb csb-orb3"></div>
+        <div class="csb-lines"></div>
+      </div>
+      <div class="chakra-ov"></div>
+      <canvas id="chakraBg"></canvas>
+      <canvas id="chakraLt"></canvas>
+      <canvas id="chakraFx"></canvas>
+      <div class="sec-fade"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 3 & 4: SERVICES + WHY IT MATTERS   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="page">
+      <div class="sec">
+        <div class="s3-hero rv">
+          <div class="tag">Search Has Evolved. Has Your Strategy?</div>
+          <h2>
+            The Best Search Agency for <em>Sustainable Organic Growth.</em>
+          </h2>
+          <p class="sub">
+            Most agencies still optimize for Google alone. But search now spans
+            20 interconnected surfaces — AI platforms, voice, local, schema, and
+            beyond. RSM is the only agency built to cover them all. If you want
+            to be found online, everywhere, this is how we do it:
+          </p>
+        </div>
+
+        <div class="svc-grid">
+          <div class="svc-card rv" style="--ac: var(--green)">
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: var(--green);
+                opacity: 0;
+                transition: opacity 0.4s;
+              "
+            ></div>
+            <div class="svc-icon" style="color: var(--green)">⚡</div>
+            <!-- <h4>Answer Engine Optimization</h4> -->
+            <p>
+              ChatGPT, Perplexity, Gemini — they give one answer, not ten links.
+              AEO structures your content so that answer is your brand. 200M+
+              weekly users are searching AI right now.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: var(--purple)">🔮</div>
+            <h4>AI Overview Optimization</h4>
+            <p>
+              Google's AI Overviews appear on 30%+ of searches, pushing organic
+              results down. AIO ensures your content is what Google's AI pulls
+              from — not your competitor's.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: var(--gold)">🛡</div>
+            <h4>E-E-A-T Authority</h4>
+            <p>
+              Experience, Expertise, Authority, Trust — Google's quality
+              framework. Without genuine E-E-A-T signals, no keywords or
+              backlinks save your rankings. We build real authority.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: var(--cyan)">&lt;/&gt;</div>
+            <h4>Schema & Structured Data</h4>
+            <p>
+              Search engines are machines. Schema speaks their language —
+              telling algorithms exactly what your business does, where, and for
+              whom. 30+ schema types implemented.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: var(--pink)">📍</div>
+            <h4>Local SEO & Google Business Profile</h4>
+            <p>
+              46% of Google searches have local intent. GBP optimization, NAP
+              consistency across 100+ directories, reviews, and geo-schema
+              determine who wins nearby customers.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: var(--blue)">🔗</div>
+            <h4>Link Building & Acquisition</h4>
+            <p>
+              Quality backlinks signal authority. Every DA60+ link earned
+              compounds your domain rating and strengthens every page on your
+              site. Strategic, not spammy.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: var(--red)">📢</div>
+            <h4>Content Strategy & Marketing</h4>
+            <p>
+              Strategic content that ranks, converts, and gets cited by AI
+              platforms. Topical authority clusters, pillar pages, and
+              AEO-optimized articles that compound traffic.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: #fb923c">🤖</div>
+            <h4>SearchGPT & AI Search</h4>
+            <p>
+              AI search is evolving weekly. From ChatGPT's search feature to
+              Perplexity and Copilot — RSM stays ahead of every shift so your
+              visibility never falls behind.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-icon" style="color: #a3e635">🌐</div>
+            <h4>Technical SEO & Site Health</h4>
+            <p>
+              Core Web Vitals, crawlability, indexing, site architecture, page
+              speed — the invisible foundation that determines whether anything
+              else you do actually works.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="svc-link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="cta-center rv">
+          <a
+            href="https://calendly.com/thomas-relevant-search-media/30min"
+            target="_blank"
+            class="cta-btn"
+            >See All Services</a
+          >
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="sec">
+        <div class="s4-split rv">
+          <div>
+            <div class="tag">Why This Matters</div>
+            <h2>
+              Organic Search Is the <em>Highest-ROI Investment</em> You're Not
+              Making.
+            </h2>
+          </div>
+          <div class="s4-right">
+            <p>
+              Every other marketing channel costs money every time someone sees
+              your brand. Organic search builds a permanent, compounding asset
+              that delivers returns for years — not days.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="cta-outline"
+              target="_blank"
+              >Get A Free SEO Audit</a
+            >
+          </div>
+        </div>
+
+        <div class="stat-strip rv">
+          <div class="ss">
+            <div class="num" style="color: var(--green)">5.7x</div>
+            <div class="lbl">Higher ROI than paid advertising</div>
+          </div>
+          <div class="ss">
+            <div class="num" style="color: var(--gold)">53%</div>
+            <div class="lbl">Of all web traffic is organic search</div>
+          </div>
+          <div class="ss">
+            <div class="num" style="color: var(--purple)">$0</div>
+            <div class="lbl">Cost per click after initial investment</div>
+          </div>
+          <div class="ss">
+            <div class="num" style="color: var(--cyan)">∞</div>
+            <div class="lbl">Compounding returns that never stop</div>
+          </div>
+        </div>
+
+        <div class="feat rv">
+          <div class="ft">
+            <div class="fnum">THE ROI COMPARISON</div>
+            <h3>Paid Rents Attention. <em>Organic Owns It.</em></h3>
+            <p>
+              Every ad dollar vanishes when you stop paying. Organic builds
+              <strong>equity in digital real estate</strong> that appreciates
+              over time. After 12 months, organic delivers 5.7x more revenue per
+              dollar than paid search.
+            </p>
+            <p>
+              One ranking page delivers free traffic for years. The ROI isn't
+              linear — it <strong>compounds every single month</strong>.
+            </p>
+          </div>
+          <div class="fv">
+            <div class="accent" style="background: var(--green)"></div>
+            <div class="vtitle">CHANNEL ROI — 12 MONTH COMPARISON</div>
+            <div class="br">
+              <span class="bl">Organic SEO</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="92"
+                  style="width: 0%; background: var(--green)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--green)">5.7x</span>
+            </div>
+            <div class="br">
+              <span class="bl">Content</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="65"
+                  style="width: 0%; background: var(--gold)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--gold)">3.8x</span>
+            </div>
+            <div class="br">
+              <span class="bl">Social</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="42"
+                  style="width: 0%; background: var(--purple)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--purple)">2.4x</span>
+            </div>
+            <div class="br">
+              <span class="bl">Email</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="38"
+                  style="width: 0%; background: var(--cyan)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--cyan)">2.1x</span>
+            </div>
+            <div class="br">
+              <span class="bl">PPC / Ads</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="17"
+                  style="width: 0%; background: var(--red)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--red)">1.0x</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote rv">
+          <p>
+            "Every day without a unified search strategy, your competitor
+            publishes another page, earns another backlink, gets cited by
+            another AI platform. The gap isn't closing — it's compounding
+            against you."
+          </p>
+          <div class="attr">RELEVANT SEARCH MEDIA — SEARCH INTELLIGENCE</div>
+        </div>
+
+        <div class="feat rev rv">
+          <div class="ft">
+            <div class="fnum">THE COMPETITIVE REALITY</div>
+            <h3>Every Day You Wait, <em>They Win.</em></h3>
+            <p>
+              Your competitor is publishing optimized content today. They're
+              earning backlinks, getting cited by AI platforms, capturing local
+              customers — <strong>while you're still deciding</strong>.
+            </p>
+            <p>
+              Domain authority takes 12+ months. Schema takes weeks to index.
+              E-E-A-T takes quarters.
+              <strong
+                >The best time to start was a year ago. The second best time is
+                now.</strong
+              >
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              class="link"
+              target="_blank"
+              >START TODAY →</a
+            >
+          </div>
+          <div class="fv">
+            <div class="accent" style="background: var(--red)"></div>
+            <div class="vtitle">COMPETITIVE GAP ANALYSIS</div>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 4px;
+                text-align: center;
+                margin-bottom: 12px;
+                font-size: 10px;
+                color: var(--mute);
+                font-family: &quot;JetBrains Mono&quot;, monospace;
+              "
+            >
+              <span></span><span style="color: var(--green)">COMPETITOR</span
+              ><span style="color: var(--red)">YOU</span>
+            </div>
+            <div class="br">
+              <span class="bl">AI Citations</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="78"
+                  style="width: 0%; background: var(--green)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--green)">47</span>
+            </div>
+            <div class="br">
+              <span class="bl"></span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="22"
+                  style="width: 0%; background: var(--red)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--red)">12</span>
+            </div>
+            <div style="height: 6px"></div>
+            <div class="br">
+              <span class="bl">Schema</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="88"
+                  style="width: 0%; background: var(--green)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--green)">94%</span>
+            </div>
+            <div class="br">
+              <span class="bl"></span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="12"
+                  style="width: 0%; background: var(--red)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--red)">8%</span>
+            </div>
+            <div style="height: 6px"></div>
+            <div class="br">
+              <span class="bl">Page 1 KWs</span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="80"
+                  style="width: 0%; background: var(--green)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--green)">428</span>
+            </div>
+            <div class="br">
+              <span class="bl"></span>
+              <div class="bk">
+                <div
+                  class="bf"
+                  data-w="30"
+                  style="width: 0%; background: var(--red)"
+                ></div>
+              </div>
+              <span class="bv" style="color: var(--red)">142</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-sec rv">
+          <h3>Stop Losing Revenue to <em>Invisible Search Gaps.</em></h3>
+          <p>
+            See exactly where your brand is missing — and the strategy to close
+            every gap.
+          </p>
+          <a
+            href="https://calendly.com/thomas-relevant-search-media/30min"
+            target="_blank"
+            class="cta-btn"
+            >Book Your Strategy Call</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 1: THE EVOLUTION                    -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="sec" id="cosmos">
+      <div class="sec-bg-anim" aria-hidden="true"></div>
+      <div class="sec-overlay"></div>
+      <div class="sec-content">
+        <div class="reveal">
+          <p class="sec-tag">The Evolution</p>
+          <h2 class="sec-title">From Chaos to <em>Cosmos.</em></h2>
+          <p class="sec-sub">
+            The Big Bang scattered the internet into fragments. Over two
+            decades, search evolved from simple directories into a living,
+            interconnected cosmos. RSM has been engineering visibility through
+            every era.
+          </p>
+        </div>
+        <div class="timeline reveal">
+          <div class="tl-wire"></div>
+          <div class="tl-items">
+            <div class="tl-item" data-delay="0">
+              <div class="tl-dot"></div>
+              <span class="tl-year">1998</span
+              ><span class="tl-label">Google Born</span
+              ><span class="tl-desc"
+                >PageRank changes everything. Links become currency.</span
+              >
+            </div>
+            <div class="tl-item" data-delay="100">
+              <div class="tl-dot"></div>
+              <span class="tl-year">2004</span
+              ><span class="tl-label">Local Search</span
+              ><span class="tl-desc"
+                >Maps, local packs, and "near me" queries emerge.</span
+              >
+            </div>
+            <div class="tl-item gold" data-delay="200">
+              <div class="tl-dot"></div>
+              <span class="tl-year">2006</span
+              ><span class="tl-label" style="color: #d4a54a">RSM Founded</span
+              ><span class="tl-desc"
+                >Relevant Search Media begins engineering visibility.</span
+              >
+            </div>
+            <div class="tl-item" data-delay="300">
+              <div class="tl-dot"></div>
+              <span class="tl-year">2011</span
+              ><span class="tl-label">Semantic Web</span
+              ><span class="tl-desc"
+                >Schema, Knowledge Graph, structured data.</span
+              >
+            </div>
+            <div class="tl-item" data-delay="400">
+              <div class="tl-dot"></div>
+              <span class="tl-year">2019</span
+              ><span class="tl-label">E-E-A-T Era</span
+              ><span class="tl-desc">Trust becomes the algorithm.</span>
+            </div>
+            <div class="tl-item" data-delay="500">
+              <div class="tl-dot"></div>
+              <span class="tl-year">2023</span
+              ><span class="tl-label">AI Search</span
+              ><span class="tl-desc"
+                >ChatGPT, Perplexity, Gemini rewrite the rules.</span
+              >
+            </div>
+            <div class="tl-item gold" data-delay="600">
+              <div class="tl-dot"></div>
+              <span class="tl-year">2025</span
+              ><span class="tl-label" style="color: #d4a54a"
+                >Search Everywhere</span
+              ><span class="tl-desc"
+                >One cosmos. 20 surfaces. RSM optimizes them all.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-fade"></div>
+    </section>
+
+    <!-- SECTION 2: THE CONNECTED COSMOS -->
+    <section class="sec" id="how">
+      <div class="sec-bg-anim" aria-hidden="true"></div>
+      <div class="sec-overlay"></div>
+      <div class="sec-content">
+        <div class="reveal">
+          <p class="sec-tag">The Connected Cosmos</p>
+          <h2 class="sec-title">20 Surfaces. One <em>Algorithm.</em></h2>
+          <p class="sec-sub">
+            Search isn't a checklist of channels. It's an interconnected cosmos
+            where every surface strengthens the others. Optimize one, and the
+            entire ecosystem responds.
+          </p>
+        </div>
+        <div class="cosmos-grid">
+          <div class="cosmos-card reveal">
+            <span class="cc-ring">01</span>
+            <div class="cc-icon">&#x1F310;</div>
+            <div class="cc-title">The Core: Google Search</div>
+            <div class="cc-desc">
+              Google still processes
+              <strong>8.5 billion searches daily</strong>. But rankings are no
+              longer just about keywords. E-E-A-T signals, schema markup, and AI
+              citations now determine who appears at the top. Your website's
+              authority flows outward to every other surface.
+            </div>
+          </div>
+          <div class="cosmos-card reveal">
+            <span class="cc-ring">02</span>
+            <div class="cc-icon">&#x1F916;</div>
+            <div class="cc-title">AI Search Platforms</div>
+            <div class="cc-desc">
+              ChatGPT, Perplexity, Gemini, and Copilot are
+              <strong>answering queries before users reach a website</strong>.
+              If your content isn't structured for AI citation, you're invisible
+              to the fastest-growing search surface in history. AEO and AIO are
+              no longer optional.
+            </div>
+          </div>
+          <div class="cosmos-card reveal">
+            <span class="cc-ring">03</span>
+            <div class="cc-icon">&#x1F4CD;</div>
+            <div class="cc-title">The Extended Surface</div>
+            <div class="cc-desc">
+              Local SEO, Google Business Profile, citations, voice search,
+              featured snippets, Reddit discussions — these aren't side
+              channels. They're where
+              <strong>your customers make decisions</strong>. One unified
+              strategy across all 20 surfaces creates compounding visibility.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-fade"></div>
+    </section>
+
+    <!-- SECTION 3: WHY VISIBILITY MATTERS -->
+
+    <section class="sec" id="future">
+      <div class="sec-bg-anim" aria-hidden="true"></div>
+      <div class="sec-overlay"></div>
+      <div class="sec-content">
+        <div class="reveal">
+          <p class="sec-tag">Why Visibility Matters</p>
+          <h2 class="sec-title">Invisible Brands <em>Don't Grow.</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-stats reveal">
+            <div class="stat-card">
+              <div class="stat-num">93%</div>
+              <div class="stat-label">
+                of online experiences<br />begin with search
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">75%</div>
+              <div class="stat-label">never scroll past<br />page one</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">40%</div>
+              <div class="stat-label">
+                of revenue comes from<br />organic traffic
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">18yr</div>
+              <div class="stat-label">RSM engineering<br />visibility</div>
+            </div>
+          </div>
+          <div class="why-text reveal">
+            <h3>
+              Your competitors are already <em>optimizing for AI search.</em>
+            </h3>
+            <p>
+              Every day you're not visible across all 20 search surfaces, your
+              competitors capture the traffic, the leads, and the revenue that
+              should be yours.
+            </p>
+            <p>
+              RSM doesn't just do SEO. We engineer a unified visibility strategy
+              across Google, AI platforms, local search, voice, schema, and
+              every surface where your customers are searching.
+            </p>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.35);
+                font-size: 12px;
+                font-style: italic;
+              "
+            >
+              One agency. One strategy. Every search surface covered.
+            </p>
+            <a
+              href="https://calendly.com/thomas-relevant-search-media/30min"
+              target="_blank"
+              class="why-cta"
+              >Book Your Strategy Call</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="sec-fade"></div>
+    </section>
+
+    <!-- ══════════════════════════════════ -->
+    <!-- FOOTER — "The Event Horizon"       -->
+    <!-- ══════════════════════════════════ -->
+
+    <footer class="site-footer">
+      <canvas id="footerCanvas"></canvas>
+      <div class="footer-horizon"></div>
+      <div class="footer-body">
+        <div class="ft-brand">
+          <img src="./image.png" alt="Relevant Search Media" />
+          <p class="ft-brand-tagline">Search Everywhere Optimization</p>
+          <p class="ft-brand-desc">
+            The only agency built to engineer visibility across all 20 search
+            surfaces — from Google to Gemini, Perplexity to voice, since 2006.
+          </p>
+          <a
+            href="https://calendly.com/thomas-relevant-search-media/30min"
+            target="_blank"
+            class="ft-cta"
+          >
+            Book Strategy Call <span class="ft-cta-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="ft-col">
+          <p class="ft-col-title">Services</p>
+          <ul>
+            <li>
+              <!-- <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Answer Engine Optimization</a
+              > -->
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >AI Overview Optimization</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >E-E-A-T Authority</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Schema & Structured Data</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Local SEO & GBP</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Technical SEO</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Link Building</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Content Strategy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <p class="ft-col-title">Company</p>
+          <ul>
+            <li><a href="#about">About RSM</a></li>
+            <li><a href="#cosmos">The Evolution</a></li>
+            <li><a href="#how">The Cosmos</a></li>
+            <li><a href="#future">Why Visibility</a></li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Free SEO Audit</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Strategy Call</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <p class="ft-col-title">Connect</p>
+          <ul>
+            <li>
+              <a
+                href="https://calendly.com/thomas-relevant-search-media/30min"
+                target="_blank"
+                >Book a Call</a
+              >
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-line"></div>
+      </div>
+
+      <div class="footer-sig">
+        <div class="footer-sig-inner">
+          <span class="footer-wordmark">RELEVANT SEARCH MEDIA</span>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-copy">
+          © <span id="ftYear"></span> <span>Relevant Search Media</span>. All
+          rights reserved.
+        </p>
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/company/relevant-search-media-pvt-ltd/"
+            target="_blank"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a
+            href="https://x.com/SearchRelevant_"
+            target="_blank"
+            title="Twitter / X"
+            aria-label="Twitter"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/_relevantsearchmedia"
+            target="_blank"
+            title="Instagram"
+            aria-label="Instagram"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const loader = document.getElementById("siteLoader");
+        function revealSite() {
+          loader.classList.add("hidden");
+        }
+        if (document.readyState === "complete") {
+          setTimeout(revealSite, 400);
+        } else {
+          window.addEventListener("load", function () {
+            setTimeout(revealSite, 400);
+          });
+        }
+      })();
+
+      const hamburger = document.getElementById("navHamburger");
+      const mobileMenu = document.getElementById("navMobileMenu");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+      function closeMenu() {
+        hamburger.classList.remove("open");
+        mobileMenu.classList.remove("open");
+      }
+
+      document.addEventListener("click", function (e) {
+        if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+          closeMenu();
+        }
+      });
+    </script>
+    <script src="Main.js"></script>
+    <script src="Section2.js"></script>
+    <script src="Main2.js"></script>
+    <script src="Footer.js"></script>
+  </body>
+</html>
